@@ -35,7 +35,7 @@ public class Problem1 {
 		}
 
 		System.out.println("part one answer: " + total1);
-		System.out.println("part 2 answer: " + total2);
+		System.out.println("part two answer: " + total2);
 	}
 
 	private boolean isDigit(Character input) {
