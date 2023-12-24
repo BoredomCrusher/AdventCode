@@ -20,7 +20,8 @@ public class Problem1 {
 		BufferedReader br = new BufferedReader(new FileReader(file));
 
 		String st;
-		int total = 0;
+		int total1 = 0;
+		int total2 = 0;
 
 		Problem1 problem = new Problem1();
 
@@ -28,12 +29,13 @@ public class Problem1 {
 		while ((st = br.readLine()) != null) {
 			System.out.println(st);
 
-			// total += problem.getNumbers(st);
-			total += problem.getRealNumbers(st);
+			total1 += problem.getNumbers(st);
+			total2 += problem.getRealNumbers(st);
 
 		}
 
-		System.out.println(total);
+		System.out.println("part one answer: " + total1);
+		System.out.println("part 2 answer: " + total2);
 	}
 
 	private boolean isDigit(Character input) {
